@@ -23,6 +23,7 @@
 
         $.get('/dashboard/fadama/api/main', function(data) {
             model.load(data);
+            $('#loadingModal').modal('hide');
         }, 'json');
     }
 </script>
